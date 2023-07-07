@@ -1,0 +1,21 @@
+.about-us__wrapper {
+  @include container;
+}
+
+.about-us__title {
+  margin: 0;
+
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.about-us__list {
+  @include list-reset;
+}
+
+.about-us__item {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  padding-top: 83px;
+}
