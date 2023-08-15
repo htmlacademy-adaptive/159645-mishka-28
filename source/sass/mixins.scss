@@ -18,8 +18,23 @@
   font-family: $ff-opensans;
   color: $color-charcoal;
   text-transform: uppercase;
+  text-decoration: none;
 
   background-color: $transparent;
   border: 2px solid $color-charcoal;
   cursor: pointer;
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-charcoal;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-black;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    color: rgba($color-white, 0.3);
+  }
 }
