@@ -1,0 +1,146 @@
+.checkbox {
+  margin-bottom: 40px;
+
+  @media (min-width: $vp-768) {
+    margin: 0;
+    padding-top: 65px;
+    padding-bottom: 65px;
+
+    background-color: $color-white-smoke;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding-top: 66px;
+    padding-bottom: 64px;
+  }
+}
+
+.checkbox__title {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  margin: 0 0 34px 0;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: $color-downy;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: calc(100% - 60px);
+    height: 1px;
+    margin-left: 60px;
+
+    background-color: $color-downy-email;
+
+    @media (min-width: $vp-768) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $vp-768) {
+    align-self: start;
+    margin: 0 123px 0 0;
+    padding: 0;
+  }
+
+  @media (min-width: $vp-1150) {
+    max-width: 45px;
+    margin: 3px 70px 0 61px;
+  }
+}
+
+.checkbox__list {
+  @include list-reset;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 39px;
+
+  @media (min-width: $vp-768) {
+    display: grid;
+
+    gap: 54px 59px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $vp-1150) {
+    gap: 54px 60px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.checkbox__control {
+  position: relative;
+
+  display: block;
+  padding-left: 61px;
+
+  cursor: pointer;
+
+  &:hover .checkbox__control-mark {
+    border-color: $color-downy-email;
+  }
+
+  &:active .checkbox__control-mark {
+    border-color: rgba($color-charcoal, 0.3);
+  }
+
+  @media (min-width: $vp-768) {
+    padding-left: 82px;
+  }
+}
+
+.checkbox__control-input[type="checkbox"]:checked + .checkbox__control-mark::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 24px;
+  height: 16px;
+
+  background-image: url("../img/svg/checkbox.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateX(-50%) translateY(-50%);
+
+  @media (min-width: $vp-768) {
+    width: 32px;
+    height: 22px;
+  }
+}
+
+.checkbox__control-mark {
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  display: block;
+  width: 38px;
+  height: 38px;
+
+  border: 2px solid $color-charcoal;
+  transform: translateY(-50%);
+
+  @media (min-width: $vp-768) {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+.checkbox__control-label {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 18px;
+
+  @media (min-width: $vp-768) {
+    font-size: 19px;
+  }
+}

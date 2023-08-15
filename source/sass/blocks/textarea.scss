@@ -1,0 +1,108 @@
+.textarea {
+  margin-bottom: 14px;
+
+  @media (min-width: $vp-768) {
+    display: grid;
+    margin: 0;
+    padding-top: 49px;
+    padding-bottom: 50px;
+
+    gap: 99px;
+    grid-template-columns: 68px 1fr;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding-top: 50px;
+    padding-bottom: 46px;
+
+    gap: 59px;
+    grid-template-columns: 68px 700px;
+  }
+}
+
+.textarea__title {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  margin-bottom: 22px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: $color-downy;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    width: calc(100% - 60px);
+    height: 1px;
+    margin-left: 60px;
+
+    background-color: $color-downy-email;
+
+    @media (min-width: $vp-768) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $vp-768) {
+    align-self: start;
+    margin: 19px 0 0 0;
+    padding: 0;
+  }
+
+  @media (min-width: $vp-1150) {
+    margin: 20px 0 0 62px;
+  }
+}
+
+.textarea__control {
+  @media (min-width: $vp-1150) {
+    margin-left: 48px;
+  }
+}
+
+.textarea__input {
+  width: 100%;
+  min-height: 142px;
+  margin: 0;
+  padding: 16px;
+
+  font-size: 19px;
+  line-height: 18px;
+  font-family: $ff-opensans;
+  color: $color-charcoal;
+
+  border: 2px solid $color-charcoal;
+
+  resize: none;
+
+  &::placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    font-family: $ff-opensans;
+
+    opacity: 0.3;
+
+    @media (min-width: $vp-768) {
+      font-size: 19px;
+    }
+  }
+
+  &:hover,
+  &:active {
+    border-color: $color-downy-email;
+  }
+
+  &:focus-visible {
+    border-color: $color-downy-email;
+    outline: none;
+  }
+
+  @media (min-width: $vp-1150) {
+    width: 700px;
+  }
+}

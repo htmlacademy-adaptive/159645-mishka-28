@@ -1,0 +1,102 @@
+.questionnaire__wrapper {
+  @media (max-width: ($vp-768 - 1)) {
+    @include container;
+
+    padding-top: 17px;
+    padding-bottom: 55px;
+  }
+
+  @media (min-width: $vp-768) {
+    padding-top: 66px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding-top: 115px;
+  }
+}
+
+.questionnaire__text {
+  margin: 0 0 29px 0;
+
+  font-size: 13px;
+  line-height: 24px;
+  color: $color-charcoal;
+
+  @media (min-width: $vp-768) {
+    margin: 0;
+    padding: 0 50px;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding: 0 223px 0 225px;
+  }
+}
+
+.questionnaire__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.questionnaire__group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  border: none;
+
+  @media (min-width: $vp-768) {
+    flex-direction: row;
+    padding: 0 50px;
+  }
+}
+
+.questionnaire__button-wrapper {
+  @media (min-width: $vp-768) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding: 0 225px;
+  }
+}
+
+.questionnaire__button {
+  @include button;
+
+  width: 100%;
+  padding: 16px 37px;
+
+  font-size: 17px;
+  line-height: 16px;
+
+  @media (min-width: $vp-768) {
+    order: -1;
+    width: 230px;
+    margin-right: 50px;
+    padding: 16px 30px;
+  }
+}
+
+.questionnaire__legend {
+  display: block;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  line-height: 16px;
+  color: $color-charcoal;
+
+  @media (min-width: $vp-768) {
+    margin: 0;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+}

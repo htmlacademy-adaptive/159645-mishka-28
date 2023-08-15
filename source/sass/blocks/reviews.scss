@@ -1,0 +1,252 @@
+.reviews {
+  @media (min-width: $vp-768) {
+    background-image: url("../img/background/reviews-tablet.jpg");
+    background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/reviews-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $vp-1150) {
+    background-position: 50px top;
+  }
+}
+
+.reviews__wrapper {
+  @include container;
+
+  position: relative;
+
+  padding-bottom: 51px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 6px;
+
+    background-image: url("../img/svg/zigzag-line-mobile.svg");
+
+    @media (min-width: $vp-768) {
+      height: 17px;
+
+      background-image: url("../img/svg/zigzag-line-tablet.svg");
+    }
+
+    @media (min-width: $vp-1150) {
+      right: -50px;
+      left: 50px;
+
+      width: calc(100% - 100px);
+      height: 23px;
+
+      background-image: url("../img/svg/zigzag-line-desktop.svg");
+    }
+  }
+
+  @media (min-width: $vp-768) {
+    display: grid;
+    padding-top: 79px;
+    padding-bottom: 133px;
+
+    grid-template-columns: 3fr 1fr;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding-top: 78px;
+    padding-bottom: 187px;
+  }
+}
+
+.reviews__title {
+  margin: 0 0 14px 0;
+
+  font-size: 25px;
+  line-height: 30px;
+
+  @media (min-width: $vp-768) {
+    margin: 4px 0 39px 0;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $vp-1150) {
+    margin: 0 0 35px 174px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.reviews__content {
+  @media (min-width: $vp-768) {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
+
+  @media (min-width: $vp-1150) {
+    margin-left: 175px;
+  }
+}
+
+.reviews__text {
+  margin: 0 0 33px 0;
+
+  font-size: 15px;
+  line-height: 30px;
+  color: $color-charcoal;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 60px;
+
+    font-size: 17px;
+  }
+
+  @media (min-width: $vp-1150) {
+    min-width: 845px;
+    margin-bottom: 44px;
+  }
+}
+
+.reviews__author {
+  margin-bottom: 30px;
+
+  font-style: normal;
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+  }
+}
+
+.reviews__author-name {
+  display: block;
+  margin-bottom: 3px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+
+  @media (min-width: $vp-768) {
+    font-size: 18px;
+  }
+
+  @media (min-width: $vp-1150) {
+    font-size: 17px;
+  }
+}
+
+.reviews__author-email {
+  font-size: 17px;
+  line-height: 30px;
+  color: $color-charcoal;
+}
+
+.reviews__nav {
+  display: flex;
+  margin-bottom: 38px;
+
+  @media (min-width: $vp-768) {
+    display: grid;
+    align-self: end;
+    margin: 0;
+    margin-left: 19px;
+
+    gap: 0 37px;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    grid-template-columns: repeat(2, 50px);
+  }
+
+  @media (min-width: $vp-1150) {
+    grid-column: 3 / 3;
+  }
+}
+
+.reviews__nav-button {
+  position: relative;
+
+  width: 100%;
+  height: 52px;
+  padding: 13px 42px 13px 38px;
+
+  background-color: $transparent;
+  border: 1px solid $color-whisper;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 37px;
+
+    width: 50px;
+    height: 26px;
+
+    background-image: url("../img/svg/arrow.svg");
+
+    @media (min-width: $vp-768) {
+      left: 0;
+    }
+  }
+
+  &--next {
+    border-left: none;
+
+    &::before {
+      transform: rotate(180deg);
+    }
+  }
+
+  &:hover::before {
+    opacity: 0.6;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-black;
+    outline-offset: 2px;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $vp-768) {
+    padding: 0;
+
+    border: none;
+  }
+}
+
+.reviews__button {
+  @include button;
+
+  display: block;
+  width: 100%;
+  padding: 14px 65px;
+
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+
+  @media (min-width: $vp-768) {
+    align-self: start;
+    width: 175px;
+    padding: 14px 26px;
+
+    font-size: 17px;
+
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  @media (min-width: $vp-1150) {
+    grid-column: 3 / 3;
+  }
+}

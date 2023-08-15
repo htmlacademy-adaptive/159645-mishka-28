@@ -1,0 +1,60 @@
+.intro {
+  background-color: $color-white-smoke;
+
+  @media (min-width: $vp-768) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -11px;
+      left: 0;
+
+      width: 100%;
+      height: 24px;
+
+      background-image: url("../img/svg/zigzag-tablet.svg");
+
+      @media (min-width: $vp-1150) {
+        bottom: -5px;
+
+        background-image: url("../img/svg/zigzag-desktop.svg");
+      }
+    }
+  }
+}
+
+.intro__wrapper {
+  @include container;
+
+  padding-top: 72px;
+  padding-bottom: 74px;
+
+  @media (min-width: $vp-768) {
+    padding-top: 99px;
+    padding-bottom: 76px;
+  }
+
+  @media (min-width: $vp-1150) {
+    padding-top: 102px;
+    padding-bottom: 96px;
+  }
+}
+
+.intro__title {
+  margin: 0;
+
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+
+  @media (min-width: $vp-768) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $vp-1150) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

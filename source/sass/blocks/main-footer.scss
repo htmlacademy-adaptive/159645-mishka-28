@@ -1,0 +1,121 @@
+.main-footer {
+  background-color: $color-white-smoke;
+}
+
+.main-footer__wrapper {
+  @include container;
+
+  padding-top: 28px;
+  padding-bottom: 23px;
+
+  @media (min-width: $vp-768) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 51px;
+    padding-bottom: 58px;
+  }
+}
+
+.main-footer__logo {
+  color: $color-black;
+
+  &:hover {
+    color: $color-puerto-rico-hover;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-black;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    color: rgba($color-puerto-rico-hover, 0.3);
+  }
+
+  @media (max-width: ($vp-768 - 1)) {
+    display: none;
+  }
+}
+
+.main-footer__list {
+  @include list-reset;
+
+  display: grid;
+  justify-content: center;
+  margin-bottom: 22px;
+  padding-bottom: 24px;
+
+  border-bottom: 1px solid $color-whisper-border;
+
+  gap: 29px;
+  grid-template-columns: repeat(3, 28px);
+
+  @media (min-width: $vp-768) {
+    margin: 0;
+    padding: 0;
+
+    border: none;
+  }
+}
+
+.main-footer__link {
+  display: block;
+
+  color: $color-aubergine;
+
+  &:hover {
+    color: $color-puerto-rico-hover;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-black;
+    outline-offset: 2px;
+  }
+
+  &:active {
+    color: rgba($color-puerto-rico-hover, 0.3);
+  }
+}
+
+.main-footer__copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+
+  &:hover .main-footer__copyright-image {
+    fill: $color-puerto-rico-hover;
+  }
+
+  &:focus-visible {
+    outline: 2px solid $color-black;
+    outline-offset: 2px;
+  }
+
+  &:active .main-footer__copyright-image {
+    fill: rgba($color-puerto-rico-hover, 0.3);
+  }
+}
+
+.main-footer__copyright-developer {
+  max-width: 128px;
+  margin: 0 27px 3px 0;
+
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 18px;
+  color: $color-black;
+
+  @media (min-width: $vp-1150) {
+    margin-right: 29px;
+  }
+}
+
+.main-footer__copyright-image {
+  flex-shrink: 0;
+  align-self: start;
+
+  fill: $color-downy;
+}
