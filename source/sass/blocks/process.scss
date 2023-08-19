@@ -24,6 +24,14 @@
     padding: 94px 38px 60px 78px;
 
     border: 1px solid $color-whisper;
+
+    &:hover {
+      box-shadow: 0 6px 10px 0 rgba($color-black, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px 0 rgba($color-black, 0.1);
+    }
   }
 }
 
@@ -85,7 +93,13 @@
 
   @media (min-width: $vp-1150) {
     min-width: 683px;
+    height: 100%;
   }
+}
+
+.process__video-image {
+  width: 100%;
+  object-fit: cover;
 }
 
 .process__video-control {
@@ -100,11 +114,11 @@
   background-color: $transparent;
   background-image: url("../img/svg/play.svg");
   border: none;
-  transform: translate(-50% -50%);
+  transform: translate(-50%, -50%);
   cursor: pointer;
 
   &:hover {
-    transform: translate(-50% -50%) scale(1.2);
+    transform: translate(-50%, -50%) scale(1.2);
   }
 
   &:focus-visible {
@@ -139,6 +153,11 @@
     padding: 0;
 
     border: none;
+
+    &:hover,
+    &:active {
+      box-shadow: none;
+    }
   }
 }
 

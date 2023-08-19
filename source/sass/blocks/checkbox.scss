@@ -15,6 +15,21 @@
   }
 }
 
+.checkbox__wrapper {
+  @media (min-width: $vp-768) {
+    display: flex;
+  }
+
+  @media (min-width: $vp-1150) {
+    display: grid;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 110px 0 20px;
+
+    grid-template-columns: 115px 1fr;
+  }
+}
+
 .checkbox__title {
   position: relative;
 
@@ -51,7 +66,7 @@
 
   @media (min-width: $vp-1150) {
     max-width: 45px;
-    margin: 3px 70px 0 61px;
+    margin: 3px 0 0 0;
   }
 }
 
@@ -115,6 +130,11 @@
     width: 32px;
     height: 22px;
   }
+}
+
+.checkbox__control-input:focus ~ .checkbox__control-mark {
+  outline: 2px solid $color-black;
+  outline-offset: 2px;
 }
 
 .checkbox__control-mark {

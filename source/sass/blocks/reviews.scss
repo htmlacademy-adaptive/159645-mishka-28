@@ -1,18 +1,3 @@
-.reviews {
-  @media (min-width: $vp-768) {
-    background-image: url("../img/background/reviews-tablet.jpg");
-    background-repeat: no-repeat;
-
-    @media (min-resolution: 2dppx) {
-      background-image: url("../img/background/reviews-tablet@2x.jpg");
-    }
-  }
-
-  @media (min-width: $vp-1150) {
-    background-position: 50px top;
-  }
-}
-
 .reviews__wrapper {
   @include container;
 
@@ -53,12 +38,22 @@
     padding-top: 79px;
     padding-bottom: 133px;
 
+    background-image: url("../img/background/reviews-tablet.jpg");
+    background-repeat: no-repeat;
+    background-size: 350px 457px;
+
     grid-template-columns: 3fr 1fr;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/background/reviews-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $vp-1150) {
     padding-top: 78px;
     padding-bottom: 187px;
+
+    background-position: 50px top;
   }
 }
 

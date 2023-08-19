@@ -1,4 +1,7 @@
 @mixin container {
+  min-width: 320px;
+  max-width: 1150px;
+  margin: 0 auto;
   padding: 0 30px;
 
   @media (min-width: $vp-768) {
@@ -37,5 +40,7 @@
 
   &:active {
     color: rgba($color-white, 0.3);
+
+    background-color: $color-charcoal;
   }
 }

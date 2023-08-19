@@ -8,6 +8,8 @@
   }
 
   @media (min-width: $vp-1150) {
+    max-width: 1150px;
+    margin: 0 auto;
     padding-top: 77px;
     padding-bottom: 66px;
   }
@@ -108,6 +110,11 @@
     width: 20px;
     height: 20px;
   }
+}
+
+.radio__control-input:focus ~ .radio__control-mark {
+  outline: 2px solid $color-black;
+  outline-offset: 2px;
 }
 
 .radio__control-mark {

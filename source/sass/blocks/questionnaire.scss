@@ -32,13 +32,10 @@
   }
 
   @media (min-width: $vp-1150) {
+    max-width: 1150px;
+    margin: 0 auto;
     padding: 0 223px 0 225px;
   }
-}
-
-.questionnaire__form {
-  display: flex;
-  flex-direction: column;
 }
 
 .questionnaire__group {
@@ -64,6 +61,8 @@
   }
 
   @media (min-width: $vp-1150) {
+    max-width: 1150px;
+    margin: 0 auto;
     padding: 0 225px;
   }
 }

@@ -82,120 +82,124 @@
           мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="questionnaire__form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="questionnaire__group radio">
-            <h2 class="radio__title">Тип</h2>
-            <ul class="radio__list">
-              <li class="radio__item">
-                <label class="radio__control">
-                  <input class="visually-hidden radio__control-input" type="radio" name="type" value="accessory"
-                    checked>
-                  <span class="radio__control-mark"></span>
-                  <span class="radio__control-label">Аксессуар для интерьера</span>
-                </label>
-              </li>
-              <li class="radio__item">
-                <label class="radio__control">
-                  <input class="visually-hidden radio__control-input" type="radio" name="type" value="toy">
-                  <span class="radio__control-mark"></span>
-                  <span class="radio__control-label">Детская игрушка</span>
-                </label>
-              </li>
-            </ul>
+              <h2 class="radio__title">Тип</h2>
+              <ul class="radio__list">
+                <li class="radio__item">
+                  <label class="radio__control">
+                    <input class="visually-hidden radio__control-input" type="radio" name="type" value="accessory"
+                      checked>
+                    <span class="radio__control-mark"></span>
+                    <span class="radio__control-label">Аксессуар для интерьера</span>
+                  </label>
+                </li>
+                <li class="radio__item">
+                  <label class="radio__control">
+                    <input class="visually-hidden radio__control-input" type="radio" name="type" value="toy">
+                    <span class="radio__control-mark"></span>
+                    <span class="radio__control-label">Детская игрушка</span>
+                  </label>
+                </li>
+              </ul>
           </fieldset>
           <fieldset class="questionnaire__group checkbox">
-            <h2 class="checkbox__title">Цвет</h2>
-            <ul class="checkbox__list">
-              <li class="checkbox__item">
-                <label class="checkbox__control">
-                  <input class="visually-hidden checkbox__control-input" type="checkbox" name="color" value="white"
-                    checked>
-                  <span class="checkbox__control-mark"></span>
-                  <span class="checkbox__control-label">Белый</span>
-                </label>
-              </li>
-              <li class="checkbox__item">
-                <label class="checkbox__control">
-                  <input class="visually-hidden checkbox__control-input" type="checkbox" name="color" value="grey"
-                    checked>
-                  <span class="checkbox__control-mark"></span>
-                  <span class="checkbox__control-label">Серый</span>
-                </label>
-              </li>
-              <li class="checkbox__item">
-                <label class="checkbox__control">
-                  <input class="visually-hidden checkbox__control-input" type="checkbox" name="color" value="tiffany">
-                  <span class="checkbox__control-mark"></span>
-                  <span class="checkbox__control-label">Тиффани</span>
-                </label>
-              </li>
-              <li class="checkbox__item">
-                <label class="checkbox__control">
-                  <input class="visually-hidden checkbox__control-input" type="checkbox" name="color" value="black">
-                  <span class="checkbox__control-mark"></span>
-                  <span class="checkbox__control-label">Черный</span>
-                </label>
-              </li>
-              <li class="checkbox__item">
-                <label class="checkbox__control">
-                  <input class="visually-hidden checkbox__control-input" type="checkbox" name="color" value="pink">
-                  <span class="checkbox__control-mark"></span>
-                  <span class="checkbox__control-label">Розовый</span>
-                </label>
-              </li>
-              <li class="checkbox__item">
-                <label class="checkbox__control">
-                  <input class="visually-hidden checkbox__control-input" type="checkbox" name="color" value="orange">
-                  <span class="checkbox__control-mark"></span>
-                  <span class="checkbox__control-label">Оранжевый</span>
-                </label>
-              </li>
-            </ul>
+            <div class="checkbox__wrapper">
+              <h2 class="checkbox__title">Цвет</h2>
+              <ul class="checkbox__list">
+                <li class="checkbox__item">
+                  <label class="checkbox__control">
+                    <input class="visually-hidden checkbox__control-input" type="checkbox" name="color" value="white"
+                      checked>
+                    <span class="checkbox__control-mark"></span>
+                    <span class="checkbox__control-label">Белый</span>
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label class="checkbox__control">
+                    <input class="visually-hidden checkbox__control-input" type="checkbox" name="color" value="grey"
+                      checked>
+                    <span class="checkbox__control-mark"></span>
+                    <span class="checkbox__control-label">Серый</span>
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label class="checkbox__control">
+                    <input class="visually-hidden checkbox__control-input" type="checkbox" name="color" value="tiffany">
+                    <span class="checkbox__control-mark"></span>
+                    <span class="checkbox__control-label">Тиффани</span>
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label class="checkbox__control">
+                    <input class="visually-hidden checkbox__control-input" type="checkbox" name="color" value="black">
+                    <span class="checkbox__control-mark"></span>
+                    <span class="checkbox__control-label">Черный</span>
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label class="checkbox__control">
+                    <input class="visually-hidden checkbox__control-input" type="checkbox" name="color" value="pink">
+                    <span class="checkbox__control-mark"></span>
+                    <span class="checkbox__control-label">Розовый</span>
+                  </label>
+                </li>
+                <li class="checkbox__item">
+                  <label class="checkbox__control">
+                    <input class="visually-hidden checkbox__control-input" type="checkbox" name="color" value="orange">
+                    <span class="checkbox__control-mark"></span>
+                    <span class="checkbox__control-label">Оранжевый</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
           <fieldset class="questionnaire__group information">
-            <h2 class="information__title">ФИО</h2>
-            <ul class="information__list">
-              <li class="information__item">
-                <label class="information__control">
-                  <span class="information__label">Имя:</span>
-                  <input class="information__input" type="text" name="name" placeholder="Введите ваше имя*" required>
-                </label>
-              </li>
-              <li class="information__item">
-                <label class="information__control">
-                  <span class="information__label">Фамилия:</span>
-                  <input class="information__input" type="text" name="surname" placeholder="Укажите фамилию*" required>
-                </label>
-              </li>
-              <li class="information__item">
-                <label class="information__control">
-                  <span class="information__label">Отчество:</span>
-                  <input class="information__input" type="text" name="patronymic" placeholder="Отчество, если желаете">
-                </label>
-              </li>
-            </ul>
+              <h2 class="information__title">ФИО</h2>
+              <ul class="information__list">
+                <li class="information__item">
+                  <label class="information__control">
+                    <span class="information__label">Имя:</span>
+                    <input class="information__input" type="text" name="name" placeholder="Введите ваше имя*" required>
+                  </label>
+                </li>
+                <li class="information__item">
+                  <label class="information__control">
+                    <span class="information__label">Фамилия:</span>
+                    <input class="information__input" type="text" name="surname" placeholder="Укажите фамилию*" required>
+                  </label>
+                </li>
+                <li class="information__item">
+                  <label class="information__control">
+                    <span class="information__label">Отчество:</span>
+                    <input class="information__input" type="text" name="patronymic" placeholder="Отчество, если желаете">
+                  </label>
+                </li>
+              </ul>
           </fieldset>
           <fieldset class="questionnaire__group details">
-            <legend class="visually-hidden">Контактные данные</legend>
-            <ul class="details__list">
-              <li class="details__item details__item--phone">
-                <label class="details__control">
-                  <span class="details__label">Тел</span>
-                  <input class="details__input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-                  <svg class="details__image" aria-hidden="true" focusable="false" width="25" height="24">
-                    <use xlink:href="img/sprite.svg#phone"></use>
-                  </svg>
-                </label>
-              </li>
-              <li class="details__item details__item--email">
-                <label class="details__control">
-                  <span class="details__label">E-mail</span>
-                  <input class="details__input details__input--email" type="email" name="email" placeholder="Ваш Email*"
-                    required>
-                  <svg class="details__image" aria-hidden="true" focusable="false" width="32" height="21">
-                    <use xlink:href="img/sprite.svg#email"></use>
-                  </svg>
-                </label>
-              </li>
-            </ul>
+            <div class="details__wrapper">
+              <legend class="visually-hidden">Контактные данные</legend>
+              <ul class="details__list">
+                <li class="details__item details__item--phone">
+                  <label class="details__control">
+                    <span class="details__label">Тел</span>
+                    <input class="details__input" type="tel" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+                    <svg class="details__image" aria-hidden="true" focusable="false" width="25" height="24">
+                      <use xlink:href="img/sprite.svg#phone"></use>
+                    </svg>
+                  </label>
+                </li>
+                <li class="details__item details__item--email">
+                  <label class="details__control">
+                    <span class="details__label">E-mail</span>
+                    <input class="details__input details__input--email" type="email" name="email" placeholder="Ваш Email*"
+                      required>
+                    <svg class="details__image" aria-hidden="true" focusable="false" width="32" height="21">
+                      <use xlink:href="img/sprite.svg#email"></use>
+                    </svg>
+                  </label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
           <fieldset class="questionnaire__group textarea">
             <h2 class="textarea__title">Доп</h2>
@@ -256,7 +260,9 @@
       </a>
     </div>
   </footer>
+
   <script src="js/index.js"></script>
+
 </body>
 
 </html>
