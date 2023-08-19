@@ -11,6 +11,8 @@
   }
 
   @media (min-width: $vp-1150) {
+    max-width: 1150px;
+    margin: 0 auto;
     padding: 46px 50px 50px 50px;
 
     gap: 40px;

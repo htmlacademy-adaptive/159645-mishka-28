@@ -7,14 +7,30 @@
 .main-header__wrapper {
   @include container;
 
+  position: relative;
+
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 22px;
   padding-bottom: 22px;
+
+  .no-js & {
+    @media (max-width: ($vp-768 - 1)) {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+  }
 }
 
 .main-header__logo {
+  .no-js & {
+    @media (max-width: ($vp-768 - 1)) {
+      padding: 21px 30px;
+    }
+  }
+
   &:hover {
     opacity: 0.6;
   }
